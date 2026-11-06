@@ -323,7 +323,7 @@ form.addEventListener('submit',event=>{
 
 @app.get("/")
 def home():
-	return send_file(os.path.join(os.path.dirname(__file__), "daw.html"))
+	return send_file(os.path.join(os.path.dirname(__file__), "public", "index.html"))
 
 
 @app.post("/api/compare")
