@@ -26,7 +26,7 @@ def wait_for_server(url: str = SERVER_URL, timeout: float = 20.0) -> None:
 
 def main() -> None:
     server = subprocess.Popen(
-        [sys.executable, os.path.join(ROOT, "price-app.py")],
+        [sys.executable, os.path.join(ROOT, "app.py")],
         cwd=ROOT,
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,

@@ -13,7 +13,7 @@ from urllib.parse import urljoin, urlparse
 import requests
 from flask import Flask, jsonify, request, send_file
 
-app = Flask(__name__)
+app: Flask = Flask(__name__)
 MAX_PAGE_BYTES = 2_000_000
 MARKETS = {
 	"US": ("United States", "USD"), "GB": ("United Kingdom", "GBP"),
